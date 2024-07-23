@@ -1,0 +1,82 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 6 files
+Detected 2 issues that require attention
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+File: src/utils.py
+--------------------------------------------------------------------------------
+src/utils.py:68:4: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+--------------------------------------------------------------------------------
+File: src/subspace.py
+--------------------------------------------------------------------------------
+src/subspace.py:50:41: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+================================================================================
+Detailed log follows:
+
+================================================================================
+================================================================================
+Input tree: 'src/'
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'src/utils.py'
+ outputting to 'src_v2/utils.py'
+--------------------------------------------------------------------------------
+
+68:4: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'src/main.py'
+ outputting to 'src_v2/main.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'src/subspace.py'
+ outputting to 'src_v2/subspace.py'
+--------------------------------------------------------------------------------
+
+36:16: INFO: Renamed 'tf.train.Saver' to 'tf.compat.v1.train.Saver'
+40:18: INFO: Renamed 'tf.initialize_all_variables' to 'tf.compat.v1.initialize_all_variables'
+41:13: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+50:41: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+56:30: INFO: Added keywords to args of function 'tf.transpose'
+56:55: INFO: Added keywords to args of function 'tf.transpose'
+66:36: INFO: Added keywords to args of function 'tf.transpose'
+66:61: INFO: Added keywords to args of function 'tf.transpose'
+68:45: INFO: Added keywords to args of function 'tf.transpose'
+69:32: INFO: Added keywords to args of function 'tf.norm'
+88:14: INFO: Added keywords to args of function 'tf.reduce_sum'
+88:28: INFO: Renamed 'tf.where' to 'tf.compat.v1.where'
+93:16: INFO: Renamed 'tf.train.import_meta_graph' to 'tf.compat.v1.train.import_meta_graph'
+94:13: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+96:25: INFO: Renamed 'tf.get_default_graph' to 'tf.compat.v1.get_default_graph'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'src/hierarch_network.py'
+ outputting to 'src_v2/hierarch_network.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'src/walker.py'
+ outputting to 'src_v2/walker.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'src/tree.py'
+ outputting to 'src_v2/tree.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+

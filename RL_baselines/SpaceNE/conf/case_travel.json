@@ -1,0 +1,25 @@
+{
+    "base_path": "../data/",
+    "root": 10275,
+    "num_nodes": 10241,
+    "path_edges": "input/case_travel/poi_net_edgelist_intnode.txt",
+    "path_tree": "input/case_travel/node_tree.txt",
+    "SpaceNE":{
+        "dimension": 128,
+        "walk_length": 80,
+        "num_walks": 10,
+        "model_save_path": "output/case_travel/model/model.ckpt",
+        "alpha": 1,
+        "lambda_": 1000,
+        "dimension_reduce": 1,
+        "divide_point_u": 10,
+        "max_epoch": 10,
+        "epoch": 10
+    },
+    "model_save":{
+        "basevectors": "output/case_travel/basevectors.pkl",
+        "multilayer_embeddings": "output/case_travel/multilayer_embeddings.pkl",
+        "tree": "output/case_travel/tree.pkl",
+        "node_embeddings": "output/case_travel/node_embeddings.npy"
+    }
+}

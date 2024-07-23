@@ -1,0 +1,7 @@
+data/pengpai/labeled_data
+data/city_inmigration/data/move_in_city_graphs.pickle
+data/city_inmigration/data/move_out_city_graphs.pickle
+data/city_inmigration/data/total_data.pickle
+.ipynb_checkpoints
+.idea
+.git
